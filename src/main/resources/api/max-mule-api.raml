@@ -1,0 +1,19 @@
+#%RAML 1.0
+version: v1
+title: Hello Mule API
+baseUri: https://localhost:8082/hello
+
+/mule:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            properties:
+              hello: string
+            example:
+              {
+                "hello" : "Max The Mule"
+              }
+
